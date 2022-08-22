@@ -21,7 +21,15 @@ public class UserController {
     }
 
     @PostMapping("user/signup")
-    public String signUpPost(Model model) {
+    public String signUpPost(UserSignUpForm form) {
+
+        System.out.println(form.getName());
+
+        System.out.println(form.getYear());
+        System.out.println(form.getMonth());
+        System.out.println(form.getDay());
+
+        System.out.println(form.getGender());
 
         return "redirect:/";
     }
