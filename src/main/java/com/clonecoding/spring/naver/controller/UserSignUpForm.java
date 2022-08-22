@@ -8,7 +8,7 @@ public class UserSignUpForm {
     private String re;
     private String name;
     private Date birth;
-    private Boolean gender;
+    private String gender;
     private String email;
 
     private String year;
@@ -55,11 +55,11 @@ public class UserSignUpForm {
         this.birth = birth;
     }
 
-    public Boolean getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Boolean gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 

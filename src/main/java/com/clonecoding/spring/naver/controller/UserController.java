@@ -23,6 +23,10 @@ public class UserController {
     @PostMapping("user/signup")
     public String signUpPost(UserSignUpForm form) {
 
+        System.out.println(form.getUserId());
+        System.out.println(form.getUserPw());
+        System.out.println(form.getRe());
+
         System.out.println(form.getName());
 
         System.out.println(form.getYear());
@@ -30,6 +34,8 @@ public class UserController {
         System.out.println(form.getDay());
 
         System.out.println(form.getGender());
+
+        System.out.println(form.getEmail());
 
         return "redirect:/";
     }
