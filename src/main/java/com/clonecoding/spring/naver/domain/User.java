@@ -6,6 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
 
 @Entity
@@ -16,8 +18,8 @@ public class User {
     private String userId;
     private String userPw;
     private String name;
-    private Date birth;
-    private Boolean gender;
+    private LocalDate birth;
+    private String gender;
     private String email;
     @CreationTimestamp
     private Timestamp regDt;
@@ -54,19 +56,19 @@ public class User {
         this.name = name;
     }
 
-    public Date getBirth() {
+    public LocalDate getBirth() {
         return birth;
     }
 
-    public void setBirth(Date birth) {
+    public void setBirth(LocalDate birth) {
         this.birth = birth;
     }
 
-    public Boolean getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Boolean gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 

@@ -7,13 +7,12 @@ public class UserSignUpForm {
     private String userPw;
     private String re;
     private String name;
-    private Date birth;
-    private String gender;
-    private String email;
-
     private String year;
     private String month;
     private String day;
+    private String gender;
+    private String email;
+
 
     public String getUserId() {
         return userId;
@@ -45,14 +44,6 @@ public class UserSignUpForm {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Date getBirth() {
-        return birth;
-    }
-
-    public void setBirth(Date birth) {
-        this.birth = birth;
     }
 
     public String getGender() {
