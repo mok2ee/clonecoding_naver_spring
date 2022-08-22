@@ -1,8 +1,11 @@
 package com.clonecoding.spring.naver.domain;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
@@ -16,6 +19,8 @@ public class User {
     private Date birth;
     private Boolean gender;
     private String email;
+    @CreationTimestamp
+    private Timestamp regDt;
 
     public Long getId() {
         return id;
@@ -71,5 +76,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Timestamp getRegDt() {
+        return regDt;
+    }
+
+    public void setRegDt(Timestamp regDt) {
+        this.regDt = regDt;
     }
 }
