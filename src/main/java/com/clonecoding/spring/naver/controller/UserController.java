@@ -8,7 +8,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class UserController {
 
-    @GetMapping ("user/signup")
+    @PostMapping("user/login")
+    public String loginPost(Model model) {
+
+        return "redirect:/";
+    }
+
+    @GetMapping("user/signup")
     public String signUpGet(Model model) {
 
         return "user/signup";
