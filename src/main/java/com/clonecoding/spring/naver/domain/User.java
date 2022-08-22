@@ -14,7 +14,7 @@ public class User {
     private String userPw;
     private String name;
     private Date birth;
-    private Boolean sex;
+    private Boolean gender;
     private String email;
 
     public Long getId() {
@@ -57,12 +57,12 @@ public class User {
         this.birth = birth;
     }
 
-    public Boolean getSex() {
-        return sex;
+    public Boolean getGender() {
+        return gender;
     }
 
-    public void setSex(Boolean sex) {
-        this.sex = sex;
+    public void setGender(Boolean gender) {
+        this.gender = gender;
     }
 
     public String getEmail() {
